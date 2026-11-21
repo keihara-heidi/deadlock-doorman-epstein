@@ -1,0 +1,5 @@
+# Grelgn's base and private adaptations are not redistributable.
+*.vpk
+*.7z
+/build/
+__pycache__/
