@@ -1,0 +1,18 @@
+:root { color-scheme: dark; font: 15px/1.4 system-ui, sans-serif; color: #f2ecdc; background: #151c1d; }
+* { box-sizing: border-box; }
+body { margin: 0; height: 100dvh; display: grid; grid-template-rows: auto minmax(0,1fr) auto; }
+header, footer { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 14px clamp(12px, 4vw, 48px); }
+header { border-bottom: 1px solid #4d5147; }
+header p, .tag { margin: 0; color: #c6b892; font: 10px/1.5 ui-monospace, monospace; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 1px 0 0; font: normal clamp(23px, 3vw, 34px)/1.1 Georgia, serif; }
+main { position: relative; min-height: 0; background: radial-gradient(ellipse at 50% 36%, #465251 0%, #293535 43%, #151c1c 94%); }
+canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; } canvas:active { cursor: grabbing; }
+#status { position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%); background: #192021; padding: 8px 14px; text-align: center; }
+footer { border-top: 1px solid #4d5147; flex-wrap: wrap; }
+.views { display: flex; gap: 4px; }
+button { border: 1px solid #63665a; border-radius: 4px; background: transparent; color: inherit; font: inherit; padding: 7px 14px; cursor: pointer; }
+button:hover { border-color: #e2ce99; } button[aria-pressed=true] { background: #e2ce99; color: #1d2321; border-color: #e2ce99; }
+button:focus-visible { outline: 2px solid #e2ce99; outline-offset: 2px; }
+small { color: #bac0b6; } @media (max-width: 620px) { small { display: none; } }
+.downloads { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
+.downloads a { color: #e2ce99; text-underline-offset: .18em; }
