@@ -44,7 +44,3 @@ with tempfile.TemporaryDirectory() as temp:
     shutil.copyfile(glb, out / glb.name)
 for name in ('welcome.wav', 'welcome-low.wav', 'welcome-hotel.wav'):
     shutil.copyfile(here.parent / 'assets' / name, out / name)
-downloads = here / 'public/downloads'
-downloads.mkdir(exist_ok=True)
-for name in ('Doorman-Island.vpk', 'Doorman-Island-Voice-Only.vpk'):
-    shutil.copyfile(here.parent / 'build' / name, downloads / name)
