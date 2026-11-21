@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 
 TAKES = (
-    ('welcome', .90, 'atempo=0.91111,bass=g=1.1:f=160,treble=g=-0.5:f=4200'),
+    ('welcome', 1.0, 'atempo=0.82'),
     ('welcome-low', 1.02, 'bass=g=1:f=155,equalizer=f=1650:t=q:w=1:g=1'),
     ('welcome-hotel', .94, 'bass=g=2:f=150,treble=g=-1.5:f=3900,'
      'aecho=0.85:0.85:53|113|217|389:0.18|0.13|0.08|0.04'),
